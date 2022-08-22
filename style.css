@@ -1,0 +1,145 @@
+
+body{
+    background: rgb(209, 140, 61);
+}
+
+main{
+    display: flex;
+}
+
+#texto-principal{
+    resize: none;
+    height: 550px;
+    width: 577px;
+    border: none;
+    outline: none;
+    background-color:rgb(209, 140, 61);
+
+    margin: 20px 60px ;
+
+    /*Typography*/
+    color:  #f3e8c2;
+
+
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#texto-principal::-webkit-input-placeholder{
+    color: #f3e8c2;
+}
+
+#boton-encriptar{
+    /* Auto layout */
+    margin: 0 24px;
+    width: 328px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #4d5f2b;
+    
+    border: 1px solid black;
+    border-radius: 24px;   
+    
+    /*Texto*/
+    font-family: 'Inter';
+    font-size: 20px;
+    color: #FFFFFF;
+
+    transition: 2s background padding;
+}
+
+#boton-encriptar:hover{
+    background: #072B61;
+}
+
+#boton-encriptar:active{
+    background: #021738;
+    border: 30px;
+}
+
+#boton-desencriptar{
+    /* Auto layout */   
+    margin: 0 24px;
+    width: 328px;
+    height: 67px;
+    /* Light gray */
+    background: #abb896;
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    /*Texto*/
+    font-family: 'Inter';
+    font-size: 20px;
+    color: #050505;
+
+    transition: 2s background padding;
+}
+
+#boton-desencriptar:hover{
+    background: rgba(239, 241, 250, 1) linear-gradient(0deg, #EFF1FA, #EFF1FA);
+}
+
+#boton-desencriptar:active{
+    background: #FFFFFF;
+    border: 30px;
+}
+
+#texto-encriptado{
+    display: block;
+
+    background-image: url("imagenes/muñeco.png");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+    
+    resize: none;
+    outline: none;
+    
+    /* Rectangle 1 */
+    margin: 10px;
+    padding: 15px 20px;
+    width: 350px;
+    height: 550px;
+    left: 950px;
+    top: 20px;
+    border-radius: 20px;
+
+    /* background: #f3e8c2; */
+    
+    /*Typography*/
+    color: #152742;
+
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: left;
+}
+
+#copiar{
+    /* Auto layout */
+    margin: 0 24px;
+    width: 328px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #4d5f2b;
+    border-radius: 24px;
+    
+    /*Texto*/
+    font-family: 'Inter';
+    font-size: 20px;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+#copiar:active{
+    background: #021738;
+    border: 30px;
+}
+
+#copiar{display:none;}
